@@ -9,7 +9,7 @@ describe('Pokedex', function () {
     )
   })
 
-  it("can visit a pokemon's page", () => {
+  it('can visit a pokemons page', () => {
     cy.visit('http://localhost:5000')
     cy.contains('charizard').click()
     cy.contains('Hidden ability')
